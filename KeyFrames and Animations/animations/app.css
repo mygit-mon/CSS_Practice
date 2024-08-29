@@ -1,0 +1,42 @@
+.parent {
+  background-color: #e9a5f0;
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: #e93c21;
+  height: 50%;
+  width: 50%;
+}
+
+.parent:hover .child {
+  background-color: #e93c21;
+  transform: translateX(100%);
+  animation: myAnimation 3s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    transform: translateX(100%) translateY(0%);
+  }
+
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
