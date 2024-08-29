@@ -1,0 +1,9 @@
+body {
+  background-image: url('./img/cat-img.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  color: red;
+}
