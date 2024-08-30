@@ -1,0 +1,93 @@
+.box {
+  background: pink;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+.box:active {
+  background-color: green;
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1:hover {
+  color: red;
+}
+
+h1::first-letter {
+  font-family: lucida calligraphy;
+  font-size: 3cm;
+  color: red;
+  text-shadow: 5px 8px 9px cyan;
+}
+
+* {
+  font-size: 30px;
+}
+
+q::before {
+  content: '<<';
+  color: blue;
+}
+
+q::after {
+  content: '>>';
+}
+
+center h1 {
+  color: orange;
+}
+
+center div {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: calc(50% - 1em);
+  border-radius: 1.3em;
+  transform-origin: 1.3em 1em;
+  animation: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  background-color: red;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.a1 {
+  animation-delay: 0.1s;
+  background-color: cyan;
+}
+
+.a2 {
+  animation-delay: 0.2s;
+  background-color: pink;
+}
+
+.a3 {
+  animation-delay: 0.3s;
+  background-color: purple;
+}
+
+.a4 {
+  animation-delay: 0.4s;
+  background-color: green;
+}
+
+.a5 {
+  animation-delay: 0.5s;
+  background-color: black;
+}
