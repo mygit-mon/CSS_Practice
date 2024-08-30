@@ -21,7 +21,7 @@
 
 .img img {
   transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
-  box-shadow: -80px 60px 15px 5px rgb(0, 0, 0, 0.4);
+  box-shadow: -80px 60px 50px 5px rgb(0, 0, 0, 0.4);
   transition: all 0.4s;
   transform-style: preserve-3d;
 }
